@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front End Weather Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href ="home.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class = "col wf"><h2></h2></div>
+            <div class = "col-7" id = "header">Wellcome Weather Application</div>
+            <div class = "col wf"><h2></h2></div>
+        </div>
+        <div class="row">
+            <div class="col wf "></div>
+            <div class="col-6" id = "search-box">
+                <form class="form-inline md-form form-sm active-cyan-2 mt-2">
+                        <input type="text" class="form-control form-control-sm mr-3 w-75" placeholder="Search your city Weather" aria-label="Search">
+                            <button class="btn btn-success " type="button">
+                                <i class="glyphicon glyphicon-search"></i>Search
+                            </button>
+                        
+                   
+                    <div class = "display">
+                        <h4>Current weather and forecasts in your city</h4>
+                        <p class ="name"></p>
+                        <p class="temp"></p>
+                        <p class = "max_tem"></p>
+                        <p class = "min_temp"></p>
+                        <p class = "humidity"></p>
+                        <p class = "wind_speed"></p>
+                        <p class = "desc"></p>
+                        
+                        
+                    </div>
+                </form>
+
+            </div>
+            <div class="col wf "></div>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src = "Weather.js"></script>         
+</body>
+</html>

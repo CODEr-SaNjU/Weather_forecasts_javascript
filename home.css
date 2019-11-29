@@ -1,0 +1,39 @@
+body{
+    margin: 0%;
+    background-image: url("image1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+}
+
+#header{
+    padding: 60px;
+    font-size: 40px;
+    font-style: italic;
+    color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#search-box{
+    background-color: #0003;
+    padding: 50px;
+    box-sizing: border-box;
+}   
+.display{text-align: center;
+    font-size: 30px;
+
+}
+
+.row{
+    min-height: 300px;
+}
+h4{
+    color: orange;
+    margin: 5px;
+    text-align: center;
+}
+p{
+    text-align:left;
+    color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
