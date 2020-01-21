@@ -1,12 +1,12 @@
-var button = document.querySelector('.btn')
-var inputValue = document.querySelector('.form-control')
-var name = document.querySelector('.name');
-var temp = document.querySelector('.temp');
-var max_tem = document.querySelector('.max_tem');
-var min_temp = document.querySelector('.min_temp');
-var humidity = document.querySelector('.humidity');
-var wind_speed = document.querySelector('.wind_speed');
-var desc = document.querySelector('.desc');
+let button = document.querySelector('.btn')
+let inputValue = document.querySelector('.form-control')
+let name = document.querySelector('.name');
+let temp = document.querySelector('.temp');
+let max_tem = document.querySelector('.max_tem');
+let min_temp = document.querySelector('.min_temp');
+let humidity = document.querySelector('.humidity');
+let wind_speed = document.querySelector('.wind_speed');
+let desc = document.querySelector('.desc');
 
 
 
@@ -16,16 +16,16 @@ button.addEventListener('click',function(){
     fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&units=metric&appid=706b854629f2bdc189041532abf754fd')
     .then(response=>response.json())
     .then(data =>{
-        var nameValue = data['name']
-        var tempValue = data['main']['temp']
-        var max_temValue = data['main']['temp_max'];
-        var min_tempValue = data['main']['temp_min'];
-        var humidityValue = data['main']['humidity'];
-        var wind_speedValue = data['wind']['speed'];
-        var descValue = data['weather'][0]['description'];
+        let nameValue = data['name']
+        let tempValue = data['main']['temp']
+        let max_temValue = data['main']['temp_max'];
+        let min_tempValue = data['main']['temp_min'];
+        let humidityValue = data['main']['humidity'];
+        let wind_speedValue = data['wind']['speed'];
+        let descValue = data['weather'][0]['description'];
        
        
-        
+
         
         name.innerHTML = "City Name : "+nameValue
         temp.innerHTML = "temperature : "+tempValue+"&deg;C"
