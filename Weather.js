@@ -1,14 +1,12 @@
 let button = document.querySelector('.btn')
-let inputValue = document.querySelector('.form-control')
-let name = document.querySelector('.name');
+let inputValue = document.querySelector('input')
+let city_name = document.querySelector('.city_name');
 let temp = document.querySelector('.temp');
 let max_tem = document.querySelector('.max_tem');
 let min_temp = document.querySelector('.min_temp');
 let humidity = document.querySelector('.humidity');
 let wind_speed = document.querySelector('.wind_speed');
 let desc = document.querySelector('.desc');
-
-
 
 
 
@@ -23,20 +21,14 @@ button.addEventListener('click',function(){
         let humidityValue = data['main']['humidity'];
         let wind_speedValue = data['wind']['speed'];
         let descValue = data['weather'][0]['description'];
-       
-       
-
         
-        name.innerHTML = "City Name : "+nameValue
+        city_name.innerHTML = "City Name : "+nameValue
         temp.innerHTML = "temperature : "+tempValue+"&deg;C"
         max_tem.innerHTML = "max_temperature : "+max_temValue+"&deg;C"
         min_temp.innerHTML = "min_temperature : "+min_tempValue+"&deg;C"
         humidity.innerHTML = "Humidity at : "+humidityValue+" %"
         wind_speed.innerHTML ="Wind Speed  : "+wind_speedValue+" m/s"
-        desc.innerHTML = "cloudiness :: "+descValue
-          
-      
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+        desc.innerHTML = "cloudiness :: "+descValue                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
 })
 
